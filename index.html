@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#091d1d" />
+    <title>ميزان — مديرك المالي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <nav class="sidebar">
+        <a class="brand" href="#"><span class="brand-mark">م</span><span>ميزان</span></a>
+        <div class="nav-links">
+          <button class="nav-link active"><span>⌂</span> الرئيسية</button>
+          <button class="nav-link"><span>◌</span> معاملاتي</button>
+          <button class="nav-link"><span>◔</span> أهدافي</button>
+          <button class="nav-link"><span>✦</span> المساعد الذكي</button>
+          <button class="nav-link"><span>♧</span> التقارير</button>
+        </div>
+        <div class="side-bottom">
+          <button class="nav-link"><span>⚙</span> الإعدادات</button>
+          <div class="profile"><div class="avatar">ن</div><div><strong>نورة العتيبي</strong><small>خطة Plus</small></div><span class="chev">⌄</span></div>
+        </div>
+      </nav>
+
+      <section class="dashboard">
+        <header class="topbar">
+          <div><p class="eyebrow">الأحد، ٦ سبتمبر</p><h1>صباح الخير، نورة <span>✦</span></h1></div>
+          <div class="top-actions"><button class="icon-btn" aria-label="الإشعارات">♧<i></i></button><button class="month-picker">سبتمبر ٢٠٢٦ <span>⌄</span></button></div>
+        </header>
+
+        <section class="hero-grid">
+          <article class="health-card">
+            <div class="health-copy"><p class="eyebrow light">صحتك المالية</p><div class="score-line"><b>٧٦</b><span>/ ١٠٠</span></div><div class="status-pill"><i></i> جيدة وفي تحسن</div><p class="health-note">ارتفعت درجتك <strong>٤ نقاط</strong> مقارنة بالشهر الماضي</p></div>
+            <div class="score-ring"><div><strong>٧٦</strong><span>نقطة</span></div></div>
+            <div class="health-footer"><span>آخر تحديث اليوم، ٩:٤٢ ص</span><button>اعرف كيف نحسبها ←</button></div>
+          </article>
+          <article class="balance-card">
+            <div class="card-title"><span>ملخص الشهر</span><button class="dots">•••</button></div>
+            <div class="balance-row"><div><small>الدخل</small><b>١٨,٥٠٠ <em>ر.س</em></b></div><span class="income-icon">↙</span></div>
+            <div class="balance-row"><div><small>المصروف</small><b>١١,٢٤٠ <em>ر.س</em></b></div><span class="expense-icon">↗</span></div>
+            <div class="savings"><span>ادخارك هذا الشهر</span><b>٧,٢٦٠ ر.س <small>+١٦٪</small></b></div>
+          </article>
+        </section>
+
+        <section class="section-head"><div><p class="eyebrow">نظرة سريعة</p><h2>أين تذهب أموالك؟</h2></div><button class="text-btn">عرض التحليل الكامل ←</button></section>
+        <section class="insight-grid">
+          <article class="spend-card panel"><div class="card-title"><div><h3>الإنفاق حسب الفئة</h3><small>هذا الشهر</small></div><button class="dots">•••</button></div><div class="spend-body"><div class="donut"><div class="donut-hole"><strong>١١,٢٤٠</strong><span>ر.س</span></div></div><ul class="legend"><li><i class="c1"></i><span>مطاعم وترفيه</span><b>٣,٨٤٠ ر.س</b><small>٣٤٪</small></li><li><i class="c2"></i><span>التزامات وفواتير</span><b>٢,٧٦٠ ر.س</b><small>٢٥٪</small></li><li><i class="c3"></i><span>تسوق</span><b>١,٩٨٠ ر.س</b><small>١٨٪</small></li><li><i class="c4"></i><span>أخرى</span><b>٢,٦٦٠ ر.س</b><small>٢٣٪</small></li></ul></div></article>
+          <article class="alert-card"><div class="sparkle">✦</div><div><p class="eyebrow light">تنبيه ذكي</p><h3>الإنفاق على المطاعم ارتفع</h3><p>زاد إنفاقك <b>٦٤٪</b> خلال آخر ٣ أشهر. هذا قد يؤثر على هدف سيارتك.</p><button class="light-btn" id="showDetails">استكشف السبب ←</button></div><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+        </section>
+
+        <section class="section-head goal-head"><div><p class="eyebrow">تقدمك</p><h2>أهدافك المالية</h2></div><button class="text-btn">إدارة الأهداف ←</button></section>
+        <section class="goals-grid">
+          <article class="goal panel"><div class="goal-top"><span class="goal-icon car">▰</span><span class="percent">٤٢٪</span></div><h3>سيارة جديدة</h3><p>١٢,٦٠٠ من ٣٠,٠٠٠ ر.س</p><div class="progress"><i style="width:42%"></i></div><small>متبقي ١٧,٤٠٠ ر.س</small></article>
+          <article class="goal panel"><div class="goal-top"><span class="goal-icon plane">⌁</span><span class="percent">٧٨٪</span></div><h3>رحلة اليابان</h3><p>٩,٣٦٠ من ١٢,٠٠٠ ر.س</p><div class="progress blue"><i style="width:78%"></i></div><small>متبقي ٢,٦٤٠ ر.س</small></article>
+          <article class="goal panel"><div class="goal-top"><span class="goal-icon shield">♢</span><span class="percent">٩١٪</span></div><h3>صندوق الطوارئ</h3><p>٢٧,٣٠٠ من ٣٠,٠٠٠ ر.س</p><div class="progress gold"><i style="width:91%"></i></div><small>متبقي ٢,٧٠٠ ر.س</small></article>
+          <button class="add-goal"><span>＋</span> أضف هدفًا جديدًا</button>
+        </section>
+      </section>
+
+      <aside class="assistant-panel">
+        <div class="assistant-head"><div class="ai-logo">✦</div><div><h2>مساعدك المالي</h2><span><i></i> متصل الآن</span></div><button class="close-assistant">×</button></div>
+        <div class="chat"><div class="bot-msg">مرحبًا نورة! راجعت وضعك المالي لهذا الشهر.<br><br>لديك <strong>٢,٤٠٠ ر.س فائض</strong> بعد تغطية جميع التزاماتك. هل تريد أن أقترح أفضل استخدام له؟</div><div class="quick-actions"><button>كيف أوزع الفائض؟</button><button>هل أقدر أشتري شيء؟</button><button>حلل إنفاقي</button></div><div class="bot-msg dim">بالمناسبة، لو خفّضت طلبات الطعام بنسبة ٢٠٪ هذا الشهر، ستصل لهدف السيارة قبل الموعد بـ ٣ أسابيع. <span>↗</span></div></div>
+        <div class="chat-input"><button>⌕</button><input aria-label="اسأل مساعدك" placeholder="اسأل مساعدك أي شيء..." /><button class="send">↑</button></div>
+        <p class="secure-note">⌾ بياناتك محمية ومشفرة دائمًا</p>
+      </aside>
+    </main>
+    <div class="modal" id="modal"><div class="modal-card"><button class="modal-close">×</button><div class="modal-icon">↗</div><p class="eyebrow">تحليل السلوك</p><h2>نمط الإنفاق بعد الراتب</h2><p>خلال آخر ٤ أشهر، يرتفع إنفاقك في المطاعم بين ٣٠٪ و٤٠٪ خلال أول أسبوع من نزول الراتب.</p><div class="modal-stat"><span>التوفير المحتمل شهريًا</span><b>٧٦٨ ر.س</b></div><button class="modal-action">إنشاء حد إنفاق للمطاعم</button></div></div>
+    <script src="app.js"></script>
+  </body>
+</html>
